@@ -1,0 +1,18 @@
+#letter counter
+print("What's your name?")
+n = input()
+print("Type in any word please " + n + ".")
+word = [input()]
+for w in word:
+    if len(w) == 0:
+        print("0 letters")
+    elif len(w) == 1:
+        print(str(w) + ":", str(len(w)) + " letter")
+    else:
+        print(str(w) + ":", str(len(w)) + " letters")
+    if len(w) <= 0:
+        print("That isn't even a word " + n + "...")
+    elif len(w) > 5:
+        print("Woah, that's a big word " + n + "!")
+    elif len(w) <= 5:
+        print("That word is short, " + n + ".")
